@@ -1,13 +1,11 @@
-function RecordBB
+function RecordTable4BB
 clc;
 clear all;
 Recordxls = [];
-tR = {[0.5 0.25],[0.5 0.5],[0.5 0.75],[0.25 0.25],[0.25 0.5],[0.25 0.75],[0.75 0.25],[0.75 0.5],[0.75 0.75]};
-
-for N = 12:20:12
-    for nmax = 19:40:19
-        for tandR = 1:9
-            for ai = 12:12
+for N = 60:20:140
+    for nmax = 100:40:220
+        for tandR = 2:2
+            for ai = 15:15
                 recordB = [];
                 recordC = [];
                 recordA = [];
@@ -15,10 +13,7 @@ for N = 12:20:12
                 markrate = 0;
                 for TestTime = 1:20
                     try
-                        A = [];
-                        B = [];
-                        C = [];
-                        xls = sprintf('BB-tandR%d-N%d-nmax%d-ai%d-TestTime%d',tandR,N,nmax,ai,TestTime)
+                        xls = sprintf('E3_right0426-tandR%d-N%d-nmax%d-ai%d-TestTime%d',tandR,N,nmax,ai,TestTime)
                         A = xlsread(xls,'Sheet1');
                         B = xlsread(xls,'decom_list');
                         recordA = [recordA;  sum(A(:,7))];
@@ -37,12 +32,12 @@ for N = 12:20:12
                 end
                 num = 20;
                 if mark == num
-                    Recordxls = [Recordxls;N nmax -0.01 tR{tandR} 0 mean(recordA) 0 max(recordA) 1 mean(recordB) 2 max(recordB) markrate];
+                    Recordxls = [Recordxls;tandR N ai nmax TestTime+1 0 mean(recordA) 0 max(recordA) 1 mean(recordB) 2 max(recordB) 3 mean(recordC) 4 max(recordC) 5 markrate];
                 else
-                    Recordxls = [Recordxls;N nmax -0.01 tR{tandR} [0 0 0 0 0 0 0 0 0 0 0]];
+                    Recordxls = [Recordxls;tandR N ai nmax TestTime+1 [0 0 0 0 0 0 0 0 0]];
                 end
             end
         end
     end
 end
-xlswrite('RecordTable3BB', Recordxls);
+xlswrite('RecordTable4BB', Recordxls);

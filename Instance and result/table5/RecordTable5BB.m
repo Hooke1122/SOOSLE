@@ -1,4 +1,4 @@
-function RecordTable5
+function RecordTable5BB
 clc;
 clear all;
 Recordxls2 = [];
@@ -32,4 +32,4 @@ for N = 80:20:80
     end
 end
 Recordxls;
-xlswrite('RecordTable5.xls', Recordxls2);
+xlswrite('RecordTable5BB.xls', Recordxls2);
