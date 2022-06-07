@@ -16,7 +16,7 @@ __0414tandRX-NX-nmaxX-TestTimeX.xls__ in __table1, table2, and table3__ is small
 ### others
 The meaning of the numbers behind ***tandR, N, ai, nmax, and TestTime*** in the name of the instance is as follows.
 
-> ***tandR*** - $(\tau,R)$, 1 to 9 represent [0.5 0.25], [0.5 0.5], [0.5 0.75], [0.25 0.25], [0.25 0.5], [0.25 0.75], [0.75 0.25], [0.75 0.5], [0.75 0.75], [0.75 0.75] respectively;
+> ***tandR*** - $(\tau,R)$, 1 to 9 represent (0.5 0.25), (0.5 0.5), (0.5 0.75), (0.25 0.25), (0.25 0.5), (0.25 0.75), (0.75 0.25), (0.75 0.5), (0.75 0.75), (0.75 0.75) respectively;
 > 
 > ***N*** - the total number of orders;
 > 
