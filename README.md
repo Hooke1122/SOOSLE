@@ -9,7 +9,7 @@ The excel output of BB is named __BB-tandRX-NX-nmaxX-aiX-TestTimeX.xls__, where 
 Folder __MIP__ contains the gurobi model of MIP `SOOSLE`, and the generated excel contains instance, result, calculation time and Gap, etc. These data will be used in the `RecordTableXMIP` of table1, table2 and table3 of folder __Instance and result__.
 
 ## Instance and result
-Folder __Instance and result__ contains 5 table folders. __0414tandRX-NX-nmaxX-nmaxX-TestTimeX.xls__ in each table folder is the instance, and __BB-tandRX-NX-nmaxX-aiX-TestTimeX.xls__ is the BB calculation result for the corresponding instance.
+Folder __Instance and result__ contains 6 table folders. __0414tandRX-NX-nmaxX-nmaxX-TestTimeX.xls__ in each table folder is the instance, and __BB-tandRX-NX-nmaxX-aiX-TestTimeX.xls__ is the BB calculation result for the corresponding instance.
 
 __0414tandRX-NX-nmaxX-TestTimeX.xls__ in __table1, table2, and table3__ is small-scale instance, which also includes the results of MIP. __0414tandRX-NX-nmaxX-nmaxX-TestTimeX.xls__ in __table4, table5, and table6__ is large-scale instance, which is not calculated using MIP.
 
