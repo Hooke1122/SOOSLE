@@ -10,7 +10,7 @@ for N = 80:20:80
                 MeanA = [];
                 for TestTime = 1:20
                     try
-                        xls = sprintf('E3_right2-tandR%d-N%d-nmax%d-ai%d-TestTime%d',tandR,N,nmax,ai,TestTime)
+                        xls = sprintf('BB-tandR%d-N%d-nmax%d-ai%d-TestTime%d',tandR,N,nmax,ai,TestTime)
                         A = xlsread(xls,'split_list');
                         MeanA = [MeanA;mean(A(:,3:end))];
                     catch err

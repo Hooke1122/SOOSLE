@@ -73,7 +73,7 @@ for i = 1 : Bsize
             decom_listDetail = [decom_listDetail;BsizeSub Deep nodeNum DecomResult(j) isInitial];
         end 
         
-        decom_listBA = [decom_listBA;BsizeSub Deep nodeNum size(Elimite,2)];
+        decom_listBA = [decom_listBA;BsizeSub Deep nodeNum size(Elimite,2)]; %
        %% LB
         nodeNum = size(ResultDecomposed,1);    
         T_comparision = [];

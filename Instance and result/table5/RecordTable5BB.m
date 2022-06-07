@@ -13,7 +13,7 @@ for N = 80:20:80
                 Recordxls = [];
                 for TestTime = 1:20
                     try
-                        xls = sprintf('E3_right2-tandR%d-N%d-nmax%d-ai%d-TestTime%d',tandR,N,nmax,ai,TestTime)
+                        xls = sprintf('BB-tandR%d-N%d-nmax%d-ai%d-TestTime%d',tandR,N,nmax,ai,TestTime)
                         Sheet1 = xlsread(xls,'Sheet1');
                         A = xlsread(xls,'split_list');                        
                         B = xlsread(xls,'decom_list');

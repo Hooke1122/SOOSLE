@@ -10,11 +10,11 @@ for N = 80:20:80
                 Recordxls = [];
                 for TestTime = 1:20
                     try
-                        xls = sprintf('E3_right2-tandR%d-N%d-nmax%d-ai%d-TestTime%d',tandR,N,nmax,ai,TestTime)
+                        xls = sprintf('BB-tandR%d-N%d-nmax%d-ai%d-TestTime%d',tandR,N,nmax,ai,TestTime)
                         B = xlsread(xls,'decom_listBA');
                         DeepNumdecom = [];
-		                DeepNumdecom(1) = 1;
-                        for deep = 2:80
+		                DeepNumdecom(1) = -1;
+                        for deep = 2:81 
                             DeepNumdecom(deep) = sum(B(find(B(:,2)==deep),3) - B(find(B(:,2)==deep),4));
                         end
                         Recordxls = [Recordxls;DeepNumdecom]; 

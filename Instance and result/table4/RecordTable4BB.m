@@ -13,7 +13,7 @@ for N = 60:20:140
                 markrate = 0;
                 for TestTime = 1:20
                     try
-                        xls = sprintf('E3_right0426-tandR%d-N%d-nmax%d-ai%d-TestTime%d',tandR,N,nmax,ai,TestTime)
+                        xls = sprintf('BB-tandR%d-N%d-nmax%d-ai%d-TestTime%d',tandR,N,nmax,ai,TestTime)
                         A = xlsread(xls,'Sheet1');
                         B = xlsread(xls,'decom_list');
                         recordA = [recordA;  sum(A(:,7))];

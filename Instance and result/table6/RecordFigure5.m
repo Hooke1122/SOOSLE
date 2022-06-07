@@ -11,7 +11,7 @@ for N = 80:20:80
                 recordC = [];
                 Recordxls = [];
                 for TestTime = 1:20                       
-                    xls = sprintf('E3_right2-tandR%d-N%d-nmax%d-ai%d-TestTime%d',tandR,N,nmax,ai,TestTime)                    
+                    xls = sprintf('BB-tandR%d-N%d-nmax%d-ai%d-TestTime%d',tandR,N,nmax,ai,TestTime)                    
                     C = xlsread(xls,'split_list1or2');
                     recordC = [recordC;C(1,3:end)];                   
                 end           
